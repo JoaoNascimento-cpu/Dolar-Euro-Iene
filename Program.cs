@@ -14,7 +14,7 @@ namespace Dolar__Euro__Iene
             
             do
             {
-                
+                Console.ForegroundColor = ConsoleColor.Gray;   
                 Console.WriteLine("Qual moeda você deseja comparar com Real?");
                 Console.WriteLine("[1] - Dolar.");
                 Console.WriteLine("[2] - Euro.");
@@ -27,25 +27,25 @@ namespace Dolar__Euro__Iene
                     case "1":
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Digite o valor que deseja calcular de real para dolar:");
-                        Console.WriteLine(Conversor.RealParaDolar(Conversor.respostaMetodos = float.Parse(Console.ReadLine( ) ) ) );
+                        Console.WriteLine(Conversor.RealParaDolar(float.Parse(Console.ReadLine( ) ) ) );
                         Console.WriteLine("Agora digite um valor de Dolar para Real:");
-                        Console.WriteLine(Conversor.DolarParaReal(Conversor.respostaMetodos = float.Parse(Console.ReadLine( ) ) ) );
+                        Console.WriteLine(Conversor.DolarParaReal(float.Parse(Console.ReadLine( ) ) ) );
                         Console.WriteLine("Retornando ao Menu.");
                         break;
                     case "2":
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine("Digite o valor que deseja calcular de Real para dolar:");
-                        Console.WriteLine(Conversor.RealParaEuro(Conversor.respostaMetodos = float.Parse(Console.ReadLine() ) ) );
+                        Console.WriteLine(Conversor.RealParaEuro(float.Parse(Console.ReadLine() ) ) );
                         Console.WriteLine("Agora digite um valor para converter de Euro para Real:");
-                        Console.WriteLine(Conversor.EuroParaReal(Conversor.respostaMetodos = float.Parse(Console.ReadLine() ) ) );
+                        Console.WriteLine(Conversor.EuroParaReal(float.Parse(Console.ReadLine() ) ) );
                         Console.WriteLine("Retornando ao Menu.");
                         break;
                     case "3":
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("Digite o valor que deseja calcular de real para Iene:");
-                        Console.WriteLine(Conversor.IeneParaReal(Conversor.respostaMetodos = float.Parse(Console.ReadLine( ) ) ) );
+                        Console.WriteLine(Conversor.IeneParaReal(float.Parse(Console.ReadLine( ) ) ) );
                         Console.WriteLine("Agora digite um valor de Iene para Real:");
-                        Console.WriteLine(Conversor.RealParaIene(Conversor.respostaMetodos = float.Parse(Console.ReadLine( ) ) ) );
+                        Console.WriteLine(Conversor.RealParaIene(float.Parse(Console.ReadLine( ) ) ) );
                         Console.WriteLine("Retornando ao Menu.");
                         break;        
                     default:

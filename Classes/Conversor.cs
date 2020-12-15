@@ -4,11 +4,8 @@ namespace DolarEuroIene.Classes
     {
 
         public static string respostaMenu;
-
-        public static float respostaMetodos;
         private static float cotacaoDolar = 5.11f;
         private static float cotacaoEuro = 6.21f;
-
         private static float cotacaoIene = 0.049f;
 
         public static float RealParaDolar(float valorRS)
